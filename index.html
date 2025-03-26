@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+  @theme {
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow:hsl(39, 100%, 56%);
+    --green-teal:hsl(166, 100%, 37%);
+    --cobalt-blue:hsl(234, 85%, 45%);
+    --light-slate-bg:hsl(252, 100%, 67%);
+    --light-royal-blue:hsl(241, 81%, 54%);
+    --violet-blue-circle:hsla(256, 72%, 46%, 1);
+    --persian-blue-cirlce:hsla(241, 72%, 46%, 0);
+    --pale-blue:hsl(221, 100%, 96%);
+    --light-lavender:hsl(241, 100%, 89%);
+    --dark-grey-blue: hsl(224, 30%, 27%);
+  }
+</style>
+</head>
+<body class="font-roboto-font h-screen flex items-center justify-center bg-[#ECF2FF]">
+
+  <main class="flex lg:flex-row max-sm:flex-col h-[512px] w-[736px] bg-white rounded-3xl">
+    <section class="w-1/2 p-[38px] flex flex-col gap-7 items-center bg-gradient-to-b from-[#4D21C9] to-[#7755FF] rounded-3xl">
+      <div class="flex flex-col gap-[38px]">
+        <div class="text-2xl text-[#CAC9FF] text-center">Your Result</div>
+        <div class="flex flex-col gap-1 justify-center items-center w-[200px] h-[200px] aspect-square rounded-full bg-[#4D21C9]">
+          <span class="text-7xl text-white font-bold">76</span>
+          <span class="text-[18px] text-[#CAC9FF]">of 100</span>
+        </div>
+      </div>
+      <div class="flex flex-col gap-[14px] justify-center items-center">
+        <span class="text-[32px] font-bold text-white">Great</span>
+        <p class="text-[18px] text-[#CAC9FF] text-center">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </section>
+    
+    <section class="w-1/2 flex flex-col p-[38px] gap-7 bg-white rounded-3xl">
+      <div class="text-2xl text-[#303B59] font-bold">Summary</div>
+      <div class="flex flex-col gap-5 " id="summary-container">
+        <!-- <div class="flex flex-row justify-between bg-red-50 p-3 rounded-lg">
+          <div class="flex flex-row gap-3"><img src="./assets/images/icon-reaction.svg" alt="icon-reaction"> <span >Reaction</span></div>
+          <span> <strong>80</strong> <span class="text-[#303B59] font-bold">/ 100</span></span>
+        </div>
+        <div>
+          <div><img src="./assets/images/icon-memory.svg" alt=""><span>Memory</span></div>
+          <span>92 / 100</span>
+        </div>
+        <div>
+          <div><img src="./assets/images/icon-verbal.svg" alt="icon-verbal"><span>Verbal</span></div>
+          <span>61 / 100</span>
+        </div>
+        <div>
+          <div><img src="./assets/images/icon-visual.svg" alt="icon-visual"><span>Visual</span></div>
+          <span>72 / 100</span>
+        </div> -->
+      </div>
+      <button class="bg-[#303B59] text-white font-bold p-4 rounded-3xl hover:bg-[#7755FF] mt-6">Continue</button>
+    </section>
+    
+  </main>
+ <script src="./script.js"></script>
+</body>
+</html>
